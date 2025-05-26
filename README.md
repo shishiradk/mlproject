@@ -1,6 +1,6 @@
 # 🧠 End-to-End Machine Learning Project
 
-This is a complete **end-to-end machine learning pipeline** built with Python, inspired by [Krish Naik's ML deployment series](https://www.youtube.com/playlist?list=PLZoTAELRMXVPkl7oRvzyNnyj1HS4wt2K-). It includes everything from data ingestion to model training and (soon) deployment using cloud platforms like **AWS** and **Azure**.
+This is a complete **end-to-end machine learning pipeline** built with Python. It includes everything from data ingestion to model training and (soon) deployment using cloud platforms like **AWS** and **Azure**.
 
 ---
 
