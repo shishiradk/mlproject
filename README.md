@@ -1,6 +1,6 @@
 # 🧠 End-to-End Machine Learning Project
 
-This is a complete **end-to-end machine learning pipeline** built with Python. It includes everything from data ingestion to model training and (soon) deployment using cloud platforms like **AWS** and **Azure**.
+This is a complete **end-to-end machine learning pipeline** built with Python. It includes everything from data ingestion to model training and a simple web interface for predictions using Flask.
 
 ---
 
@@ -8,8 +8,7 @@ This is a complete **end-to-end machine learning pipeline** built with Python. I
 
 - Build a robust, modular ML pipeline from scratch  
 - Practice real-world MLOps techniques like logging, exception handling, and config management  
-- Containerize the application using Docker  
-- Deploy on multiple cloud platforms (AWS Beanstalk, EC2 with ECR, Azure Containers)  
+- Provide a web interface for model inference using Flask  
 
 ---
 
@@ -24,11 +23,10 @@ mlproject/
 ├── constants/                # Constant values used across the pipeline  
 ├── exception/                # Custom exception class  
 ├── logger/                   # Custom logging module  
-├── pipeline/                 # Training pipeline execution scripts  
+├── pipeline/                 # Training and prediction pipeline scripts  
 ├── utils/                    # Utility functions  
 ├── main.py                   # Entry point to trigger pipeline  
-├── app.py                    # Flask app for deployment (coming soon)  
-├── Dockerfile                # Docker config for containerization (coming soon)  
+├── application.py            # Flask app for web-based predictions  
 ├── requirements.txt          # Project dependencies  
 └── README.md                 # Project overview  
 ```
@@ -42,8 +40,7 @@ mlproject/
 - [x] End-to-end logging and custom exception handling  
 - [x] Reusable pipeline components  
 - [x] Version-controlled data & artifacts  
-- [ ] Docker containerization (in progress)  
-- [ ] Cloud deployment to AWS & Azure (coming soon)  
+- [x] Simple Flask web app for predictions  
 
 ---
 
@@ -56,7 +53,7 @@ cd mlproject
 
 # 2. Create a virtual environment (optional but recommended)  
 python -m venv venv  
-source venv/bin/activate  # On Windows: venv\Scripts\activate  
+venv\Scripts\activate  # On Windows
 
 # 3. Install dependencies  
 pip install -r requirements.txt  
@@ -74,26 +71,26 @@ This triggers the end-to-end ML pipeline including:
 - Data ingestion  
 - Data transformation  
 - Model training  
-- Model evaluation (coming soon)  
 
 ---
 
-## 🌐 Deployment Plans
+## 🌐 Run the Web App
 
-Deployment steps (coming soon):  
-- [ ] Containerize with Docker  
-- [ ] Deploy Flask app to AWS Elastic Beanstalk  
-- [ ] Set up EC2 instance with ECR integration  
-- [ ] Experiment with Azure Container Instances  
+To start the Flask web interface for predictions:
+
+```bash
+python application.py
+```
+
+Then open your browser and go to `http://localhost:5000` to use the web interface.
 
 ---
 
 ## 📊 Tech Stack
 
 - **Language**: Python  
-- **Frameworks**: Flask (for deployment)  
-- **MLOps Tools**: Docker, YAML, Logging, Exception Handling  
-- **Cloud**: AWS, Azure (planned)  
+- **Frameworks**: Flask  
+- **MLOps Tools**: YAML, Logging, Exception Handling  
 
 ---
 
@@ -101,7 +98,7 @@ Deployment steps (coming soon):
 
 - Building production-grade ML pipelines  
 - Writing modular and maintainable Python code  
-- Hands-on MLOps with Docker and cloud deployment  
+- Creating a web interface for ML model inference  
 - Project versioning and collaboration on GitHub  
 
 ---
@@ -123,4 +120,4 @@ Connect with me for collaboration or questions!
 ## ⭐️ Show Your Support
 
 If you found this project useful, please consider giving it a ⭐️ on GitHub.  
-It motivates and helps others discover this project!
+It motivates and helps others discover this
